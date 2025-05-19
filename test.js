@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 
-const OPENROUTER_API_KEY = "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"; // <-- Your OpenRouter key here
+const OPENROUTER_API_KEY = "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"; // <-- Your OpenRouter key here
 
  
 app.get('/favicon.ico', (req, res) => res.status(204).end());
@@ -27,7 +27,7 @@ app.post("/suggest", async (req, res) => {
         "X-Title": "Compiler AI Assistant"
       },
       body: JSON.stringify({
-        model: "openai/gpt-3.5-turbo",
+        model: "gpt-3.5-turbo",
         messages: [
           {
             role: "system",
